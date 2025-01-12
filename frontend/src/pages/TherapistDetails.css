@@ -1,0 +1,55 @@
+.time-slots {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .time-slot {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s ease;
+    font-size: 14px;
+  }
+  
+  .time-slot:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .time-slot.selected {
+    background-color: #61dafb;
+    color: white;
+    border-color: #21a1f1;
+  }
+  .booking-button {
+    background-color: #61dafb;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .booking-button:hover {
+    background-color: #21a1f1;
+  }
+  
+  .message {
+    margin-top: 20px;
+    font-size: 14px;
+    color: green;
+  }
+  
+  .message.error {
+    color: red;
+  }
+
+
+

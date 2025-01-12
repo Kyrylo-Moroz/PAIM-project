@@ -1,0 +1,53 @@
+  .visit-cards {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(200px, 400px));
+    gap: 20px;
+    padding: 20px;
+    max-width: calc(250px * 4 + 20px * 3); 
+  }
+
+  .visit-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: left;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .visit-card:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .visit-card.selected {
+    border-color: #61dafb;
+    background-color: #eaf6ff;
+  }
+  
+  .visit-card.expired {
+    background-color: #e0e0e0;
+    cursor: not-allowed;
+    border-color: #ccc;
+    color: #888;
+    box-shadow: none;
+  }
+  
+  .visit-button {
+    display: block;
+    margin: 10px auto 0;
+    background-color: #fb6161;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .visit-button:hover {
+    background-color: #ec5151;
+  }
+  

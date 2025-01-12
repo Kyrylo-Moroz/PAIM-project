@@ -1,0 +1,151 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.nav-links {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-button {
+  text-decoration: none; 
+  background-color: #61dafb;
+  color: #000;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.nav-button:hover {
+  background-color: #21a1f1;
+  transform: scale(1.05); 
+}
+
+.nav-button:active {
+  background-color: #1e90ff;
+}
+
+.content {
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  width: 80%;
+  color: #333; 
+  font-size: 1.2em;
+}
+
+@media (max-width: 768px) {
+  .content {
+    font-size: 1em;
+    top: 90px;
+  }
+}
+
+.therapist-cards {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(200px, 400px));
+  gap: 20px;
+  padding: 20px;
+}
+
+
+
+.therapist-card {
+  background-color: #00eeff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.therapist-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.react-calendar {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+}
+
+.react-calendar__tile {
+  text-align: center;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.react-calendar__tile--active {
+  background-color: #61dafb;
+  color: white;
+}
+
+.react-calendar__tile:hover {
+  background-color: #21a1f1;
+  color: white;
+}
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  background-color: #98cffc;
+  color: white;
+  height: 60px;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  height: 100px;
+  width: auto;
+  cursor: pointer;
+}
+
+.nav-links {
+  display: flex;
+  gap: 10px;
+}
+
+.nav-button {
+  text-decoration: none;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.nav-button:hover {
+  background-color: #0056b3;
+}
+#therapists-page-title {
+  text-align: center;
+  font-family: "Arial", sans-serif; 
+  font-size: 2.5em; 
+  color: #000000; 
+  margin-top: 20px;
+}
+
+#therapists-page-slogon {
+  text-align: center; 
+  font-family: "Arial", sans-serif;
+  font-size: 1.1em;
+  color: #000000;
+  margin-top: 20px;
+  font-style: italic; 
+}
